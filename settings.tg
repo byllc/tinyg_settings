@@ -1,0 +1,76 @@
+#https://github.com/synthetos/TinyG/wiki/TinyG-Configuration-for-Firmware-Version-0.97
+
+#motor axis 0=X, 1=Y, 2=Z, 3=A
+$1ma=2
+$2ma=1
+$3ma=1
+$4ma=0br
+
+#Motor Step Angle normal for Nema 17 is 1.8, and 0.9 for 23's but our current motors are 1.8 23's
+$1sa=1.8
+$2sa=1.8
+$3sa=1.8
+$4sa=1.8
+
+#motor travel per revolution ?
+$1tr=80.04
+$2tr=40.02
+$3tr=40.02
+$4tr=40.02
+
+#microsteps
+$1mi=8
+$2mi=8
+$3mi=8
+$4mi=8
+
+#polarty (forward or reverse)
+$1po=1
+$2po=1
+$3po=0
+$4po=1
+
+#motor power mode
+#0     Motor 1 disabled
+#1     Motor 1 always powered
+#2     Motor 1 powered during a machining cycle (any axis is moving)
+#3     Motor 4 only powered when it is moving
+$1pm=4
+$2pm=2
+$3pm=2
+$3pm=2
+
+#axis mode. 1=Standard 0=Diable 2=Inhibited(will not move but will be acounted for) 4=(Radius Mode)
+$xam=1
+$yam=1
+$zam=1
+
+#velocity mode (aka traverse rate or seek rate) max non cutting traversal speed in mm or inches per minute
+$xvm=?
+$yvm=?
+$zvm=?
+
+
+#Travel minumum and travel maximum (how far is the head allowed to travel from zero position)
+#$xtn is min value xtm is max value
+$xtn=0
+$xtm=800
+$ytn=0
+$ytm=200
+$ztn=0
+$ztm=30
+
+#Maximum Jerk Settings
+$xjm=50,000,000
+$yjm=50,000,000
+$zjm=25,000,000
+
+#jerk homing, should be faster than max jerk. Effects how fast the limits will stop the machine
+$xjh=100,000,000
+$yjh=100,000,000
+$zjh=50,000,000
+
+#$xJD  Junction Deviation
+$xjd=?
+$yjd=?
+$zjd=?
