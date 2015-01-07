@@ -14,7 +14,7 @@ $3sa=1.8
 $4sa=1.8
 
 #motor travel per revolution ?
-$1tr=1.0585
+$1tr=4.234
 $2tr=40.02
 $3tr=40.02
 $4tr=40.02
