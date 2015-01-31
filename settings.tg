@@ -26,8 +26,8 @@ $4mi=8
 
 #polarty (forward or reverse)
 $1po=1
-$2po=1
-$3po=0
+$2po=0
+$3po=1
 $4po=1
 
 #motor power mode
